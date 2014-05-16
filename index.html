@@ -59,7 +59,7 @@
 
 						<aside class="notes">
 							<ul>
-								<li>1 - 1 Instinct for technology, both old and new</li>
+								<li>1 - Instinct for technology, both old and new</li>
 								<li>2 - How? Why? Always trying to understand what you do not know. "Pack rat of little facts"</li>
 								<li>3 - Always get all the facts before making a decision</li>
 								<li>4 - Get a good feel for difficulty of problems before you and how long they will take</li>
@@ -80,16 +80,325 @@
 
 						<aside class="notes">
 							<ul>
-								<li>1 - 1 Instinct for technology, both old and new</li>
-								<li>2 - How? Why? Always trying to understand what you do not know. "Pack rat of little facts"</li>
-								<li>3 - Always get all the facts before making a decision</li>
-								<li>4 - Get a good feel for difficulty of problems before you and how long they will take</li>
-								<li>5 - Know a little bit of everything and work to keep ahead of new developments</li>
+								<li>1 - admit ignorance and provide options to fix</li>
+								<li>2 - keeping the small bugs/issues under control will avoid larger problems</li>
+								<li>3 - make quality a requirement</li>
+								<li>3 - great today better than perfect 1 year from now</li>
+								<li>4 - think of your knowledge like a portfolio</li>
+								<li>4 - invest regularly - frequency > sum</li>
+								<li>4 - diversify - more you know better you can adapt</li>
+								<li>4 - manage risk - do not pull all technical eggs in one basket</li>
+								<li>4 - buy low, sell high - learning new tech early vs re-enforcing existing knowledge of other tech</li>
+								<li>4 - review and rebalance</li>
 							</ul>
 						</aside>
 
 					</script>
+				</section>
 
+				<section data-markdown>
+					<script type="text/template">
+						## Communication!
+
+						* Good idea is orphan without effective communication
+						* Know what you want to say
+						* Know your audience
+						* Know your audience's priority
+						* Know your audience's style
+
+						<aside class="notes">
+							<ul>
+								<li>1 - Plan it out and strategize before speaking</li>
+								<li>2 - You are only communicating with them if you are conveying information</li>
+								<li>2 - This gives you an idea of when best to discuss issue</li>
+								<li>3 - Verbose vs long-winded</li>
+							</ul>
+						</aside>
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Duplication
+
+						Leads to inaccuracies and conflicts when only one is updated
+
+						* Imposed duplication
+						* Inadvertent duplication
+						* Impatient duplication
+						* Interdeveloper duplication
+
+						<aside class="notes">
+							<ul>
+								<li>1 - what - you have no other choice but to duplicate</li>
+								<li>1 - workaround - write a code generator for all the different forms</li>
+								<li>2 - what - design results in duplication</li>
+								<li>2 - workaround - normalize data. When it can't (due to performance reasons) then localize as much as possible</li>
+								<li>3 - what - caused from time constraints</li>
+								<li>3 - workaround - shortcuts lead to long delays. Spend the time now to get this fixed</li>
+								<li>4 - what - caused when different developers produce the same code</li>
+								<li>4 - workaround - have active and frequent communication between developers. Make a point of reading others' source code and comments</li>
+							</ul>
+						</aside>
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Orthogonality
+
+						* Localized
+						* Re-use
+						* Refactoring
+						* Be externally orthogonal
+
+						<aside class="notes">
+							Two or more things are orthogonal if changes to one do not affect the others
+
+							<ul>
+								<li>1 - Results in reduced development and testing time</li>
+								<li>2 - Code is in smaller well-defined modules</li>
+								<li>3 - Diseased code can be isolated and is easy to swap out</li>
+								<li>4 - Decouple from 3rd party tools as well</li>
+							</ul>
+						</aside>
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Decoupling
+
+						Few interactions as possible
+						<blockquote>Law of Demeter for functions - any method of an object should only call methods belonging to itself, any parameters passed in to the method, any objects it created, and any directly held component objects</blockquote>
+
+						<aside class="notes">
+							<ul>
+								<li>1 - Unnecessary dependencies result in unstable code that is harder to maintain</li>
+								<li>2 - Opposite is also beneficial in cases. Makes code fast</li>
+							</ul>
+						</aside>
+
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Tracer Bullets and Prototypes
+
+						* Rapid build out in unknown territory
+						* Keep one, throw the other away
+						* Tracer bullets - *designed to keep being built on and get closer to the target*
+						* Prototype - *designed to just build up enough to learn what you need to*
+
+						<aside class="notes">
+							<ul>
+								<li>1 - Both promote rapid build out to allow for learning how system will work</li>
+								<li>2 - Can ignore correctness, completeness, robustness, style, etc</li>
+							</ul>
+						</aside>
+
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Estimating
+
+						* Accuracy
+						* Model Building
+						* Retrospect
+						* Don't estimate on the spot
+
+						![Dilbert On Estimating](images/dilbert-estimating.png)
+
+						<aside class="notes">
+							Being good at estimating means knowing the feasibility of ideas and where to optimize
+
+							<ul>
+								<li>1 - Need to know how accurate you need to be</li>
+								<li>1 - Units of measure in report affects perception of accuracy (7 days (more) vs 1 week (less))</li>
+								<li>2 - Break into components and estimate each individual one, focusing on the ones that are most expensive</li>
+								<li>3 - Track estimates and figure out why you were wrong on previous ones</li>
+								<li>4 - Respond to estimation requests with "I'll get back to you"</li>
+							</ul>
+						</aside>
+
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Automation
+
+						<div style="float: right">
+							![All The Things](images/all-the-things.png)
+						</div>
+
+						Code Generators
+
+						  1. Passive
+						  2. Active
+
+						Not Just Code
+
+						<aside class="notes">
+							<ul>
+								<li>1 - Run once to produce result and then divorced from generator. Result is important part. eg new source files with header info, one-off conversions</li>
+								<li>1 - Doesn't have to be 100% accurate either. Might be easier to fix mistakes after conversion does most of the work</li>
+								<li>2 - Used each time result is required. Generator is important part.</li>
+								<li>2 - Used to keep code DRY. Write representation once and convert it to all needed formats</li>
+								<li>4 - Automate approval processes (similar to our code signing)</li>
+								<li>4 - Anything that doesn't require human input -> that results in errors/misinterpretation of instructions</li>
+							</ul>
+						</aside>
+
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Programming By Coincidence
+
+						* Accidents of implementation
+						* Wizards/Code Generators
+						* How to program deliberately?
+
+						<aside class="notes">
+							<ul>
+								<li>1 - Things that happen simply because thats the way the code is currently written</li>
+								<li>1 - Keep throwing code out there and see what sticks</li>
+								<li>2 - If you don't understand what it does, don't use it</li>
+								<li>2 - Eventually code will become "yours" and you will not know how to fix it</li>
+								<li>3 - Only rely on documented behavior. If you can't then document your assumptions well</li>
+							</ul>
+						</aside>
+
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Refactoring
+
+						* Refactoring is like a growth that requires surgery
+						* When to do it?
+
+							* Duplication
+							* Nonorthogonal design
+							* Outdated knowledge
+							* Performance
+
+						* Tips
+
+						<aside class="notes">
+							<ul>
+								<li>1 - The longer you wait to excise it, the harder it is going to be to do it</li>
+								<li>1 - Coding is like gardening more-so than construction - no set plan. Some things grow while others die. You move things around</li>
+								<li>3 - Don't refactor and add functionality at the same time</li>
+								<li>3 - Take short, deliberate steps to avoid prolonged debugging</li>
+							</ul>
+						</aside>
+
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Policies And Requirements
+
+						* Policy
+						* Requirement
+						* Make the distinction for a more robust design
+
+						<br/><br/>
+
+						Policy or Requirement?
+
+						<q>Only parent holder can modify the holder's data</q>
+
+						<aside class="notes">
+							<ul>
+								<li>1 - The current "rule" that should be recorded as policy</li>
+								<li>1 - e.g. Only parent holder can modify the holder's data</li>
+								<li>1 - What does this say about n-level parents?</li>
+								<li>3 - The more general case</li>
+								<li>3 - Only authorized holders can view a holder's data.</li>
+								<li>4 - Programming to requirement will mean only metadata (requirement) will have to change</li>
+							</ul>
+						</aside>
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Testing
+
+						* Validation and Verification
+						* Test state coverage, not code coverage
+
+						    <pre><code>
+							    int test(int a, int b) {
+							      return a / (a + b);
+							    }
+						    </code></pre>
+
+						* Find bugs once
+
+						<aside class="notes">
+							<ul>
+								<li>1 - Need both for system to be useful.</li>
+								<li>1 - It needs to both work (validation) and meet the users' needs (verification)</li>
+								<li>2 - Just because code hits every line doesn't mean it won't have issue.</li>
+								<li>2 - You need to test input for each set that will produce a different state</li>
+								<li>3 - "Once human tester finds a bug it should be the last time a human tester finds the bug"</li>
+							</ul>
+						</aside>
+
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Expectations
+
+						* Manage expectations
+						* Exceeding expectations is just as bad as falling short
+						* Mildly delight user
+
+						<aside class="notes">
+							<ul>
+								<li>1 - Communicate with user and reach understanding of development process</li>
+								<li>1 - Might no longer be what was wanted or be too cumbersome or too expensive</li>
+								<li>2 - Don't surprise them with something they won't like or with a major change from their expectation</li>
+								<li>2 - Instead give them a little flourish to improve relationship</li>
+								<li>2 - Automate a step to make it more desirable to use, etc</li>
+							</ul>
+						</aside>
+
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Ownership
+
+						* Take responsibility for your work
+
+							<pre><code>hg annotate</code></pre>
+
+						* Communal ownership
+
+						<aside class="notes">
+							<ul>
+								<li>1 - Be proud of it</li>
+								<li>1 - Accept criticism</li>
+								<li>1 - Anonymity can lead to sloppy code and mistakes because nobody has to "own up" to the mistakes</li>
+								<li>2 - You can take communal ownership as long as you aren't another "cog in the wheel"</li>
+							</ul>
+						</aside>
+
+					</script>
 				</section>
 
 			</div>
